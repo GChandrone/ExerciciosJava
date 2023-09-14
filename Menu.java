@@ -4,12 +4,11 @@ public class Menu{
 
     public static void main(String[] args) {
 
-        int opc = 2;
+        int opc = 0;
 
         Scanner leia = new Scanner(System.in);
 
-        while (opc != 0 && opc != 1){
-
+        do {
             System.out.println("============== MENU ==============");
             System.out.println("[0] Escreve -> 'Olá Mundo!'");
             System.out.println("[1] Escreve -> 'Hello World!'");
@@ -26,11 +25,12 @@ public class Menu{
                     break;
                 default:
                     System.out.println("ERRO - Opção não existe - Tente Novamente");   
-            }
+            }      
         }
+        while (opc != 0 && opc != 1);
 
         leia.close();
-
+   
     }
 
 }
