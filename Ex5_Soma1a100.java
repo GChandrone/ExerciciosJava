@@ -1,4 +1,4 @@
-public class Soma1a100 {
+public class Ex5_Soma1a100 {
     public static void main(String[] args) {
         int somatotal = 0;
 

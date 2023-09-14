@@ -1,4 +1,4 @@
-public class Multiplo10 {
+public class Ex6_Multiplo10 {
     public static void main(String[] args) {
        
         System.out.println("================ MULTIPLOS DE 10 ================");

@@ -1,4 +1,4 @@
-public class NumPares {
+public class Ex3_NumPares {
     
     public static void main(String[] args) {
         System.out.println("================ NÚMEROS PARES DE 1 A 100 ================");

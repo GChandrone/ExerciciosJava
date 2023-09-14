@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MaiorNumero {
+public class Ex4_MaiorNumero {
    public static void main(String[] args) {
         int num = 1, maiorNum = 0, repete = 0;
         Scanner leia = new Scanner(System.in);

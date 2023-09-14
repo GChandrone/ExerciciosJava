@@ -40,8 +40,8 @@
             System.out.println("O maior valor é: " + maiorNum);
         }
         
-
         System.out.println("");
-
+        
+        leia.close();
     }
 }

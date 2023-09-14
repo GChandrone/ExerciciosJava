@@ -1,5 +1,5 @@
 import java.math.BigInteger;
-public class x2_anterior {
+public class Ex7_x2_anterior {
     public static void main(String[] args) {
         BigInteger somatotal = BigInteger.valueOf(1);
         
