@@ -8,5 +8,6 @@ public class Ex5_Soma1a100 {
         
         System.out.println("============= Soma de 1 a 100 =============");
         System.out.println("Soma de todos os números de 1 a 100: " + somatotal);
+        System.out.println("===========================================");
     }
 }
