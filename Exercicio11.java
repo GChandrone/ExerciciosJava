@@ -24,9 +24,9 @@ public class Exercicio11 {
             opc = leia.nextInt();    
         
             if (opc >= 1 && opc < 5) {
-                System.out.println("1° Número: ");
+                System.out.print("1° Número: ");
                 num1 = leia.nextInt(); 
-                System.out.println("2° Número: ");
+                System.out.print("2° Número: ");
                 num2 = leia.nextInt();
             }
             
