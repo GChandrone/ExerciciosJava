@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex_10deOutubro {
+public class Ex_04deOutubro {
     public static void main(String[] args) {
         int[] Vet = new int[50];
 
