@@ -13,7 +13,7 @@ public class funcao3opc {
     }
         
     public static double volumecone(double r, double h){
-        double volume = 1 / 3 * h * Math.PI * Math.pow(r, 2);
+        double volume = 1.0 / 3.0 * h * Math.PI * Math.pow(r, 2);
         return volume;
     }
     
@@ -23,32 +23,35 @@ public class funcao3opc {
         Scanner leia = new Scanner(System.in);
 
         do {
-            System.out.println("============== MENU ==============");
+            System.out.println("=================== MENU ==================");
             System.out.println("[1] Área do circulo");
             System.out.println("[2] Volume de um Cone ");   
             System.out.println("[3] Sair");
             System.out.print("Opcão: ");
             opc = leia.nextInt();    
-            
-            if (opc < 1 || opc > 3) {
-                opc = 0;
-            }
 
             switch(opc) {
     
                 case 1:
-                    System.out.print("Informe o raio do círculo: ");
-                    double raiocirculo = leia.nextDouble();
-                    System.out.println("A área do círculo é " + areacirculo(raiocirculo));
+                    System.out.print("Informe o raio do círculo em metros: ");
+                    double raio = leia.nextDouble();
+                    
+                    double resultado = areacirculo(raio);
+
+                    System.out.println("-------------------------------------------");
+                    System.out.println("A área do círculo é aproximadamente " + String.format("%.2f", resultado) + " m²");
                     break;
                 case 2:
-                    System.out.print("Informe o raio da base do cone: ");
-                    double raiocone = leia.nextDouble();
+                    System.out.print("Informe o raio da base do cone em metros: ");
+                    raio = leia.nextDouble();
                     
-                    System.out.print("Informe a altura do cone: ");
+                    System.out.print("Informe a altura do cone em metros: ");
                     double altura = leia.nextDouble();
                     
-                    System.out.println("A área do círculo é " + volumecone(raiocone, altura));
+                    resultado = volumecone(raio, altura);
+
+                    System.out.println("-------------------------------------------");
+                    System.out.println("O volume do cone é aproximadamente " + String.format("%.2f", resultado) + " m³");
                     break;
                 case 3:
                     break;
